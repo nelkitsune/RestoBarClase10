@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Trabajo</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul class="barra">
-                <li class="barra-li"></li><img src="../asset\img\avatars-000129567248-b2bzuw-t500x500.jpg" class="logo-foto">
-                <li class="barra-li"><a href="../index.html">Home</a></li>
-                <li class="barra-li"><a href="menu.html">Menu</a></li>
-                <li class="barra-li"><a href="nosotros.html">Nosotros</a></li>
-                <li class="barra-li"><a href="#">Trabajo</a></li>
-                <li class="barra-li"><a href="contacto.html">Contactanos</a></li>
-            </ul>
-        </nav>
-        <!--poner imagen aqui de logo-->
-    </header>
-    <main>
-        <section>
-            <h1>Estás buscando trabajo? Nosotros buscamos trabajadores!</h1>
-            <h4>Rellena el siguiente formulario</h4>
-        </section>
-        <section id="form-trabajo1">
-            <div class="tra1">
-                <form class="form-trabajo">
-                
-                    <label for="nombre">Nombre y apellido</label>
-                    <input type="text" name="nombre" placeholder="Cómo te llamas">
-                    <br  />
-                    <label for="edad">Tu edad</label>
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <img src="../asset\img\avatars-000129567248-b2bzuw-t500x500.jpg" class="logo-foto">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                <a class="nav-link" href="menu.html">Menu</a>
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link" href="#">Trabajo</a>
+                                <a class="nav-link" href="contacto.html">Contactanos</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--poner imagen aqui de logo-->
+        </header>
+        <main>
+            <section>
+                <h1>Estás buscando trabajo? Nosotros buscamos trabajadores!</h1>
+                <h4>Rellena el siguiente formulario</h4>
+            </section>
+            <section id="form-trabajo1">
+                <div class="tra1">
+                    <form class="form-trabajo">
+
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="nombre" placeholder="Cómo te llamas">
+                        <br />
+                        <label for="edad">Tu edad</label>
                         <input type="number" name="edad" placeholder="cuántos años tienes?">
-                    <br  />
-                    <label for="telefono">Número de teléfono</label>
+                        <br />
+                        <label for="telefono">Número de teléfono</label>
                         <input type="number" name="telefono" placeholder="número de contacto">
-                        <br  />
-                    <label for="correo">Correo Electrónico</label>
+                        <br />
+                        <label for="correo">Correo Electrónico</label>
                         <input type="email" name="correo" placeholder="dejanos tu correo">
-                        <br  />
-                    <label for="primaria">Terminaste la primaria?</label>
+                        <br />
+                        <label for="primaria">Terminaste la primaria?</label>
                         <div>si
                             <input type="radio" name="primaria" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="primaria" value="no">
                         </div>
-                    <label for="secundaria">Terminaste la secundaria?</label>
+                        <label for="secundaria">Terminaste la secundaria?</label>
                         <div>si
                             <input type="radio" name="secundaria" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="secundaria" value="no">
                         </div>
-                    <label for="terciario">tenés algún título?</label>
+                        <label for="terciario">tenés algún título?</label>
                         <div>si
                             <input type="radio" name="terciario" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="terciario" value="no">
                         </div>
-                    <label for="moto">sabés conducir?</label>
+                        <label for="moto">sabés conducir?</label>
                         <div>si
                             <input type="radio" name="moto" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="moto" value="no">
                         </div>
-                    <label for="cocinar">Sabés cocinar?</label>
+                        <label for="cocinar">Sabés cocinar?</label>
                         <div>si
                             <input type="radio" name="cocinar" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="cocinar" value="no">
                         </div>
-                    <label for="limpiar">Sabés Limpiar?</label>
+                        <label for="limpiar">Sabés Limpiar?</label>
                         <div>si
                             <input type="radio" name="limpiar" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="limpiar" value="no">
                         </div>
-                    <label for="trato">Tenés un buen trato con los clientes?</label>
+                        <label for="trato">Tenés un buen trato con los clientes?</label>
                         <div>si
                             <input type="radio" name="trato" value="si">
                         </div>
                         <div>no
                             <input type="radio" name="trato" value="no">
                         </div>
-                    
-                    <label for="hora">Disponibilidad</label>
-                        <textarea placeholder="a que hora puedes?" name="hora"></textarea>
-                <input type="submit">
-                </form>
-        </div>
 
-            <div class="tra2">
-                <img src="https://estaticos-cdn.sport.es/clip/6fcad08f-46b2-4251-abc4-61e5f2ad2dad_alta-libre-aspect-ratio_default_0.jpg" alt="repartidor" id="reparte">
-            </div>
-        </section>
-    </main>
-    <footer class="redes">
-        <h2>Encontranos en</h2>
-        <ul class="redes-lista">
-            <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i></li>
-            <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i></li>
-            <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
-        </ul>
-    </footer>
+                        <label for="hora">Disponibilidad</label>
+                        <textarea placeholder="a que hora puedes?" name="hora"></textarea>
+                        <input type="submit">
+                    </form>
+                </div>
+
+
+            </section>
+        </main>
+        <footer class="redes">
+            <h2>Encuentranos en</h2>
+            <ul class="redes-lista">
+                <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i>
+                </li>
+                <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i>
+                </li>
+                <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
