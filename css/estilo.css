@@ -6,8 +6,36 @@ footer{background-color:rgb(255, 226, 112); }
 	.img-index{width: 75%;}
 	main {min-height:90vh;}
 }
-
+.cuadrado{
+	width: 20px;
+	height: 20px;
+	background: black;
+	animation-name: mover;
+	animation-duration: 4s;
+	position: absolute;
+	animation-iteration-count: infinite;
+	}
+	@keyframes mover {
+		from{left: 0px; background-color: blue;}
+		50%{ background-color: brown; height: 100px;}
+		75%{ background-color: chartreuse;}
+		to{ left: 97%; transform: rotateZ(360deg);}
+	}
 /*menu*/
+@media screen and (min-width: 768px){
+
+	.cartas{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: auto auto auto;
+	}
+
+}
+.card{
+	background-color:rgb(255, 226, 117) ;
+}
+
+
 table {
     table-layout: fixed;
     width: 100%;
