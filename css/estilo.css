@@ -20,6 +20,7 @@
 }
 
 /*menu*/
+
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
@@ -51,12 +52,12 @@
 		height: 12px;
 	}
 }
-
 /*comienzo de nosotros*/
+
 /*trabajo comienzo*/
 /*fin de trabajo*/
 body {
-	background-color: #fff8db;
+	background-image: linear-gradient(rgb(234, 229, 9), rgb(125, 206, 19));
 }
 
 .img-index {
@@ -65,9 +66,14 @@ body {
 }
 
 footer {
-	background-color: #ffe270;
+	background-color: white;
 }
 
+.container{
+	padding-left: 0px;
+	padding-right: 0px;
+	max-width: 100%;
+}
 .logo-foto {
 	max-width: 60px;
 }
@@ -84,6 +90,10 @@ footer {
 
 .card {
 	background-color: #ffe275;
+	margin-bottom: 30px;
+	border-style: solid;
+	border-width: 30px;
+	border-radius: 100px;
 }
 
 table {
@@ -205,12 +215,8 @@ tbody td {
 }
 
 .form-trabajo {
-	background-color: chocolate;
-	font-size: 16px;
-	padding: 9px;
-	border-radius: 8px;
-	border-color: black 4px;
-	box-shadow: 10px 5px 5px black;
+	background-color: #5BB318;
+	border-radius: 4px;
 }
 
 #reparte {
@@ -223,12 +229,8 @@ tbody td {
 }
 
 .contacto {
-	background-color: chocolate;
-	font-size: 16px;
-	padding: 9px;
-	border-radius: 8px;
-	border-color: black 4px;
-	box-shadow: 10px 5px 5px black;
+	background-color: #5BB318;
+	border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) {
@@ -265,7 +267,9 @@ tbody td {
 	.nosotros-grid {
 		display: grid;
 		grid-template-columns: 50% 50%;
-		grid-template-rows: auto auto auto auto auto auto auto auto;
+		grid-template-rows: auto auto auto auto;
+		grid-column-gap: 300px;
+		margin-left: 100px;
 	}
 
 	#form-trabajo1 {
@@ -278,14 +282,5 @@ tbody td {
 
 	#reparte {
 		width: 90%;
-	}
-
-	.form-trabajo {
-		width: 60%;
-	}
-
-	#contactanos {
-		display: flex;
-		justify-content: center;
 	}
 }

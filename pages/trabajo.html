@@ -40,95 +40,59 @@
         </header>
         <main>
             <section>
-                <h1>Estás buscando trabajo? Nosotros buscamos trabajadores!</h1>
-                <h4>Rellena el siguiente formulario</h4>
+                <h1>Ahora contamos con deliveri!</h1>
+                <h4>Rellene el formulario de abajo</h4>
+                <br>
             </section>
-            <section id="form-trabajo1">
-                <div class="tra1">
-                    <form class="form-trabajo">
-
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" name="nombre" placeholder="Cómo te llamas">
-                        <br />
-                        <label for="edad">Tu edad</label>
-                        <input type="number" name="edad" placeholder="cuántos años tienes?">
-                        <br />
-                        <label for="telefono">Número de teléfono</label>
-                        <input type="number" name="telefono" placeholder="número de contacto">
-                        <br />
-                        <label for="correo">Correo Electrónico</label>
-                        <input type="email" name="correo" placeholder="dejanos tu correo">
-                        <br />
-                        <label for="primaria">Terminaste la primaria?</label>
-                        <div>si
-                            <input type="radio" name="primaria" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="primaria" value="no">
-                        </div>
-                        <label for="secundaria">Terminaste la secundaria?</label>
-                        <div>si
-                            <input type="radio" name="secundaria" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="secundaria" value="no">
-                        </div>
-                        <label for="terciario">tenés algún título?</label>
-                        <div>si
-                            <input type="radio" name="terciario" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="terciario" value="no">
-                        </div>
-                        <label for="moto">sabés conducir?</label>
-                        <div>si
-                            <input type="radio" name="moto" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="moto" value="no">
-                        </div>
-                        <label for="cocinar">Sabés cocinar?</label>
-                        <div>si
-                            <input type="radio" name="cocinar" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="cocinar" value="no">
-                        </div>
-                        <label for="limpiar">Sabés Limpiar?</label>
-                        <div>si
-                            <input type="radio" name="limpiar" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="limpiar" value="no">
-                        </div>
-                        <label for="trato">Tenés un buen trato con los clientes?</label>
-                        <div>si
-                            <input type="radio" name="trato" value="si">
-                        </div>
-                        <div>no
-                            <input type="radio" name="trato" value="no">
-                        </div>
-
-                        <label for="hora">Disponibilidad</label>
-                        <textarea placeholder="a que hora puedes?" name="hora"></textarea>
-                        <input type="submit">
-                    </form>
+            <form class="row g-3 form-trabajo">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputEmail4">
                 </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleFormControlTextarea1" class="form-label">Que desea comer</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Efectivo</option>
+                        <option>Mercado pago</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Pedido</button>
+                </div>
+            </form>
 
 
             </section>
         </main>
-        <footer class="redes">
-            <h2>Encuentranos en</h2>
-            <ul class="redes-lista">
-                <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i>
-                </li>
-                <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i>
-                </li>
-                <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
-            </ul>
-        </footer>
     </div>
+    <!--footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="../asset\img\avatars-000129567248-b2bzuw-t500x500.jpg" class="logo-foto">
+            </a>
+        </div>
+        <ul class="redes-lista">
+            <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i>
+            </li>
+            <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i>
+            </li>
+            <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
+        </ul>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

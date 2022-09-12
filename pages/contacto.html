@@ -39,35 +39,67 @@
                 <h1>AHORA PUEDES HACER UNA RESERVACION ATREVES DE LA PAGINA</h1>
                 <P>dejanos tus datos y hora de reservacion</P>
             </section>
-            <div id="contactanos">
-                <form class="contacto">
-                    <label for="name">nombre y apellido</label>
-                    <input type="text" name="name" id="name">
-                    <br />
-                    <label for="email">correo electrónico</label>
-                    <input type="email" name="email" id="email">
-                    <br />
-                    <label for="hora">Hora de la reservacion</label>
-                    <input type="number" name="Hora" id="hora">
-                    <br />
-                    <label for="message">Déjanos alguna aclaracion</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <br />
-                    <input type="submit">
+            <form class="row g-3 contacto">
+                <div class="row g-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Primer Nombre" aria-label="Primer Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Segundo Nombre" aria-label="Segundo Nombre">
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Hora</label>
+                    <select id="inputState" class="form-select">
+                    <option selected>Horario</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                        <option>24:00</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleFormControlTextarea1" class="form-label">Alguna aclaracion?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Reservar</button>
+                </div>
                 </form>
-            </div>
         </main>
-        <footer class="redes">
-            <h2>Encuentranos en</h2>
-            <ul class="redes-lista">
-                <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i>
-                </li>
-                <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i>
-                </li>
-                <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
-            </ul>
-        </footer>
     </div>
+    <!--footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="../asset\img\avatars-000129567248-b2bzuw-t500x500.jpg" class="logo-foto">
+            </a>
+        </div>
+        <ul class="redes-lista">
+            <li><i class="bi bi-instagram">Instagram<a href="https://www.instagram.com/">Mojarrita_Resto</a></i>
+            </li>
+            <li><i class="bi-facebook"> </i>Facebook:<a href="https://web.facebook.com/">restobar_mojarrita2</a></i>
+            </li>
+            <li>Google maps:<a href="https://goo.gl/maps/T7UULe8Wn8PFY5FD8">Ubicacion</a></li>
+        </ul>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
